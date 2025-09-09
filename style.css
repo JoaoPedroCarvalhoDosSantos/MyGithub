@@ -12,7 +12,7 @@ body {
     color: #333;
     line-height: 1.6;
 }
-   
+
 /* Cabeçalho */
 header {
     background-color: #24292e;
@@ -26,8 +26,8 @@ header h1 {
     font-size: 28px;
 }
 
-/* Seções */ 
-.content-section { 
+/* Seções */
+.content-section {
     max-width: 900px;
     margin: 20px auto;
     padding: 20px;
@@ -47,7 +47,7 @@ header h1 {
     text-align: justify;
 }
 
-/* Listas ordenadas */ 
+/* Listas ordenadas */
 ol {
     margin-top: 10px;
     margin-left: 20px;
