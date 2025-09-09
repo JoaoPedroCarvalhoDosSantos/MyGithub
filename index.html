@@ -8,18 +8,82 @@
 </head>
 <body>
 
-    <h2>Conceitos de GIT e GitHub</h2>
-    <h4>O Git possibilita a integração de fluxos de trabalho realizados por vários
-         contribuidores com o passar do tempo, para um determinado repositório.
-         O GitHub é um serviço de hospedagem na Web para repositórios do Git.</h4>
+    <header>
+        <h1>Conceitos de GIT e GitHub</h1>
+    </header>
 
-    <h2>Fluxo do Git / GitHub</h2>
-    <h4>O fluxo Git/GitHub envolve usar o Git localmente para controlar as versões 
-        dos arquivos e, em seguida, usar o GitHub como um repositório remoto
-        para compartilhar e colaborar no código.</h4>
+    <main>
+        <!-- Seção sobre conceitos -->
+        <section class="content-section">
+            <h2>O que é Git e GitHub</h2>
+            <p>
+                O <strong>Git</strong> possibilita a integração de fluxos de trabalho realizados por vários contribuidores
+                com o passar do tempo, para um determinado repositório.
+                O <strong>GitHub</strong> é um serviço de hospedagem na Web para repositórios do Git.
+            </p>
+        </section>
 
-    <h2>Como resolver conflitos</h2>
-    <h4>bla bla bla</h4>
-    
+        <!-- Seção sobre fluxo -->
+        <section class="content-section">
+            <h2>Fluxo do Git / GitHub</h2>
+            <p>
+                O fluxo Git/GitHub envolve usar o Git localmente para controlar as versões dos arquivos e,
+                em seguida, usar o GitHub como um repositório remoto para compartilhar e colaborar no código.
+            </p>
+        </section>
+
+        <!-- Seção sobre conflitos -->
+        <section class="content-section">
+            <h2>Como Resolver Conflitos</h2>
+            <p>
+                Conflitos acontecem quando duas ou mais pessoas alteram a mesma linha de um arquivo ou fazem
+                modificações incompatíveis no mesmo trecho de código em branches diferentes.
+                O Git não sabe qual alteração manter e solicita que você resolva manualmente.
+            </p>
+
+            <h3>Passos para Resolver Conflitos:</h3>
+            <ol>
+                <li>
+                    <strong>Atualize seu branch:</strong> Antes de começar, puxe as últimas alterações do
+                    repositório remoto para ter certeza de que seu código está atualizado.
+                    Use: <code>git pull</code>.
+                </li>
+
+                <li>
+                    <strong>Inicie a fusão (merge):</strong> Ao tentar mesclar um branch que tem conflitos,
+                    o Git vai parar o processo e informar quais arquivos estão em conflito.
+                </li>
+
+                <li>
+                    <strong>Identifique e edite os arquivos:</strong> Abra os arquivos listados com conflitos.
+                    O Git insere marcadores especiais para indicar as diferenças:
+                    <pre>
+Seu código (o que você alterou)
+                    </pre>
+                </li>
+
+                <li>
+                    <strong>Resolva o conflito:</strong> Remova os marcadores <code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>,
+                    <code>=======</code>, <code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code> e edite o arquivo para que
+                    ele fique da forma que você deseja.
+                </li>
+
+                <li>
+                    <strong>Adicione e confirme as alterações:</strong> Depois de resolver todos os conflitos,
+                    adicione os arquivos com <code>git add nome-do-arquivo</code> e finalize com:
+                    <code>git commit -m "Mensagem do commit"</code>.
+                </li>
+
+                <li>
+                    <strong>Envie as alterações:</strong> Use <code>git push</code> para enviar o resultado final para o GitHub.
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por João Pedro © 2025</p>
+    </footer>
+
 </body>
 </html>
